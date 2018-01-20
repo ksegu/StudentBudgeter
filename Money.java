@@ -24,20 +24,21 @@ public class Money {
         }
         public double getSavings(){
             double savings = allPossibleCosts[2] - addCosts();
-
             return savings;
         }
         public double percentOfTotalSpent(){
             double percent = 0.0;
             double income = allPossibleCosts[2];
             double allCosts = addCosts();
-            return percent = (allCosts / income)*100;
+            percent = (allCosts / income)*100;
+            return percent;
         }
         public double percentSpentClothes(){
             double percent = 0.0;
             double budget = allPossibleCosts[0];
             double clothes = allPossibleCosts[5];
-            return percent = (clothes / budget)*100;
+            percent = (clothes / budget)*100;
+            return percent;
         }
         public double percentSpentRent(){
             double percent = 0.0;
